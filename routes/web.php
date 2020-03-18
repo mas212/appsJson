@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('\App\Http\Controllers\Kategori\KategoriController');
+Route::resource('kategori', '\App\Http\Controllers\Kategori\KategoriController');

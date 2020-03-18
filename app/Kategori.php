@@ -9,6 +9,6 @@ class Kategori extends Model
     protected $table = 'kategoris';
 
     protected $fillable = [
-    	'name'
+    	'name' 		=>  'array'
     ];
 }
