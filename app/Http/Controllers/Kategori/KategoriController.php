@@ -37,10 +37,12 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-              $data = $request->only('nama_lengkap','phone');
-              $test['name'] = json_encode($data);
-              Kategori::insert($test);
+              $data                 = $request->only('nama_lengkap','phone');
+              $kategori             = new Kategori;
+              $kategori['name']     =  json_encode($data);
+              $kategori->save();
               return redirect()->back();
+
     }
 
     /**
